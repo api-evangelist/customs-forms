@@ -16,10 +16,10 @@ apis:
     baseURL: https://api.customsforms.example.com/v1
     version: '1.0'
     tags:
-      - customs
-      - declarations
-      - international shipping
-      - trade
+      - Customs
+      - Declarations
+      - International Shipping
+      - Trade
     properties:
       - type: Documentation
         url: https://customsforms.example.com/docs/api
@@ -46,9 +46,9 @@ apis:
     baseURL: https://api.customsforms.example.com/v1/hs-codes
     version: '1.0'
     tags:
-      - hs codes
-      - tariff
-      - classification
+      - Classification
+      - Hs Codes
+      - Tariff
     properties:
       - type: Documentation
         url: https://customsforms.example.com/docs/hs-codes-api
@@ -61,9 +61,9 @@ apis:
     baseURL: https://api.customsforms.example.com/v1/regulations
     version: '1.0'
     tags:
-      - regulations
-      - compliance
-      - countries
+      - Compliance
+      - Countries
+      - Regulations
     properties:
       - type: Documentation
         url: https://customsforms.example.com/docs/regulations-api
@@ -76,9 +76,9 @@ apis:
     baseURL: https://api.customsforms.example.com/v1/templates
     version: '1.0'
     tags:
-      - templates
-      - forms
-      - PDF generation
+      - Forms
+      - PDF Generation
+      - Templates
     properties:
       - type: Documentation
         url: https://customsforms.example.com/docs/templates-api
@@ -88,8 +88,8 @@ maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
 tags:
-  - customs
-  - international trade
-  - logistics
-  - compliance
-  - shipping
+  - Compliance
+  - Customs
+  - International Trade
+  - Logistics
+  - Shipping
