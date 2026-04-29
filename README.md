@@ -1,86 +1,54 @@
-# Customs Forms API (customs-forms)
-API for managing customs declaration forms and related documentation for international shipments
+# Customs Forms (customs-forms)
 
-**URL:** [Visit APIs.json URL](https://api.customsforms.example.com/apis.yaml)
+Customs forms are the standardized declarations and supporting documents required to move goods across international borders. Common forms include CBP Form 7501 (Entry Summary), CBP Form 3461 (Entry/Immediate Delivery), the commercial invoice, packing list, certificate of origin, CN22/CN23 postal declarations, and the EU Single Administrative Document. Most are now filed electronically through national customs systems (ACE, CDS, ICS2, NACCS), while parcel carriers expose shipping APIs that generate customs paperwork on behalf of shippers.
 
-## Tags:
+**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/customs-forms/refs/heads/main/apis.yml)
 
- - customs, international trade, logistics, compliance, shipping
+## Scope
+
+- **Type:** Index
+- **Position:** Consuming
+- **Access:** Public
+- **x-type:** topic
+
+## Tags
+
+- CBP Forms, Certificate of Origin, CN22, CN23, Commercial Invoice, Compliance, Customs, Customs Forms, Declarations, International Trade, Logistics, Packing List, SAD, Shipping
 
 ## Timestamps
 
-- **Created:** 2024-01-15 
-- **Modified:** 2024-01-15 
+- **Created:** 2024-01-15
+- **Modified:** 2026-04-28
 
 ## APIs
 
-### Customs Declaration API
-Create, submit, and manage customs declaration forms for international shipments
+No standalone customs form APIs are catalogued here. Form generation is typically delivered as a feature of carrier shipping APIs (UPS, FedEx, DHL, USPS) and customs broker / GTM platforms; national customs systems accept structured EDI/XML rather than form image submission.
 
-**Human URL:** [https://customsforms.example.com/docs](https://customsforms.example.com/docs)
+## Authoritative Forms and References
 
+- [CBP Forms (full catalogue)](https://www.cbp.gov/newsroom/publications/forms)
+- [CBP Form 7501 — Entry Summary](https://www.cbp.gov/document/forms/form-7501-entry-summary)
+- [CBP Form 3461 — Entry/Immediate Delivery](https://www.cbp.gov/document/forms/form-3461-entryimmediate-delivery)
+- [USPS International Customs Forms](https://www.usps.com/international/customs-forms.htm)
+- [Universal Postal Union (UPU) — CN22 / CN23](https://www.upu.int/)
+- [EU Single Administrative Document (SAD)](https://taxation-customs.ec.europa.eu/customs-4/customs-procedures-import-and-export-0/customs-declaration_en)
+- [USMCA Certificate of Origin](https://www.cbp.gov/trade/free-trade-agreements/usmca)
+- [WCO Rules of Origin](https://www.wcoomd.org/en/topics/origin/instrument-and-tools.aspx)
+- [WCO Harmonized System Nomenclature](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx)
+- [U.S. Harmonized Tariff Schedule](https://hts.usitc.gov/)
 
-#### Tags:
+## Vocabulary
 
- - customs, declarations, international shipping, trade
-
-#### Properties
-
-- [Documentation](https://customsforms.example.com/docs/api)
-- [OpenAPI](https://api.customsforms.example.com/openapi.json)
-- [Authentication](https://customsforms.example.com/docs/authentication)
-- [Pricing](https://customsforms.example.com/pricing)
-- [Terms of Service](https://customsforms.example.com/terms)
-- [Contact](https://customsforms.example.com/contact)
-- [SignUp](https://customsforms.example.com/signup)
-
-### Harmonized System Code API
-Look up and validate HS codes for product classification
-
-**Human URL:** [https://customsforms.example.com/docs/hs-codes](https://customsforms.example.com/docs/hs-codes)
-
-
-#### Tags:
-
- - hs codes, tariff, classification
-
-#### Properties
-
-- [Documentation](https://customsforms.example.com/docs/hs-codes-api)
-- [OpenAPI](https://api.customsforms.example.com/hs-codes-openapi.json)
-
-### Country Regulations API
-Access country-specific customs regulations and requirements
-
-**Human URL:** [https://customsforms.example.com/docs/regulations](https://customsforms.example.com/docs/regulations)
-
-
-#### Tags:
-
- - regulations, compliance, countries
-
-#### Properties
-
-- [Documentation](https://customsforms.example.com/docs/regulations-api)
-- [OpenAPI](https://api.customsforms.example.com/regulations-openapi.json)
-
-### Form Templates API
-Retrieve and generate customs form templates for different countries
-
-**Human URL:** [https://customsforms.example.com/docs/templates](https://customsforms.example.com/docs/templates)
-
-
-#### Tags:
-
- - templates, forms, PDF generation
-
-#### Properties
-
-- [Documentation](https://customsforms.example.com/docs/templates-api)
-- [OpenAPI](https://api.customsforms.example.com/templates-openapi.json)
+- **Entry Summary (CBP 7501)** — Summary of the goods being entered, used to assess duties.
+- **Entry / Immediate Delivery (CBP 3461)** — Cargo release request submitted prior to or on arrival.
+- **Commercial Invoice** — Seller's invoice describing the goods, parties, terms, and value.
+- **Certificate of Origin** — Declaration of the country in which the goods were produced; required for FTA preferential rates.
+- **CN22 / CN23** — UPU postal customs declaration forms for low-value and standard parcels respectively.
+- **Single Administrative Document (SAD)** — Standard EU import / export / transit declaration.
+- **Packing List** — Itemized list of contents, weights, and dimensions per package.
+- **Shipper's Letter of Instruction (SLI)** — Exporter instructions to a freight forwarder.
 
 ## Maintainers
 
-**FN:** Customs Forms Development Team
-
-**Email:** dev@customsforms.example.com
+**FN:** Kin Lane
+**Email:** kin@apievangelist.com
