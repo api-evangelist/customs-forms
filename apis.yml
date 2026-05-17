@@ -1,6 +1,6 @@
 aid: customs-forms
 name: Customs Forms
-x-type: topic
+kind: topic
 description: >-
   Customs forms are the standardized declarations and supporting
   documents that importers, exporters, and carriers must complete to
